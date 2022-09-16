@@ -1,0 +1,25 @@
+{
+  "name": "sistemafortyflex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gumiri/lab_eng_software_backend.git"
+  },
+  "author": "Gustavo Miranda Ricardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gumiri/lab_eng_software_backend/issues"
+  },
+  "homepage": "https://github.com/gumiri/lab_eng_software_backend#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
