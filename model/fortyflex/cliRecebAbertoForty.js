@@ -1,5 +1,5 @@
 const firebird = require('node-firebird');
-const options = require('../../config/firebirdCong');
+const options = require('../../config/firebirdCongf');
 
 function query(callback) {
     firebird.attach(options, function (err, db) {
