@@ -15,6 +15,7 @@ function qforty(callback){
         callback({message: "erro"}, [])
     }
     else{
+        r[r.length] = r[0]
         callback(undefined, r)
     }
 }
