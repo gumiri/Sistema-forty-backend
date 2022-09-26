@@ -2,7 +2,7 @@ const firebird = require('node-firebird');
 const options = require('../../config/firebirdCongf');
 
 function query(callback) {
-    firebird.attach(options.fortyflex, function (err, db) {
+    firebird.attach(options.brysaflex, function (err, db) {
 
         if (err)
             throw err;

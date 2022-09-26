@@ -1,21 +1,29 @@
 const forty = require('./fortyflex/cliRecebAbertoForty');
-r = []
-
+const brysa = require('./brysaflex/cliRecebAbertoBrysa');
+r = {};
 forty(function(err,result){
     if (err){
         throw err;
     }
     else{
-        r = result;
+        r.fortyflex = result;
     }
 });
+brysa(function(err,result){
+    if (err){
+        throw err;
+    }
+    else{
+        r.brysaflex = result;
+    }
+});
+
 
 function qforty(callback){
     if (r == []){
         callback({message: "erro"}, [])
     }
     else{
-        r[r.length] = r[0]
         callback(undefined, r)
     }
 }
