@@ -4,29 +4,30 @@ const options = require('../../config/firebirdCongf');
 function query(callback) {
     firebird.attach(options.fortyflex, function (err, db) {
 
-        if (err)
-            throw err;
+        if (err) {
+            return callback(err, []);
+        }
+        else {
+            // db = DATABASE
+            db.query(
+                `select cliente.nome, receber.st, receber.vlr, receber.saldo, receber.dtven
+                from CTREC as receber
+                inner join GCLIENTE as cliente on (receber.codic = cliente.codigo)
+                where receber.st = 'A' and (receber.dtven >= '2019-01-01' and receber.dtven <= '2022.09.22')`,
+                function (err, result) {
+                    // IMPORTANT: close the connection
 
-        // db = DATABASE
-        db.query(
-            `select cliente.nome, receber.st, receber.vlr, receber.saldo, receber.dtven
-            from CTREC as receber
-            inner join GCLIENTE as cliente on (receber.codic = cliente.codigo)
-            where receber.st = 'A' and (receber.dtven >= '2019-01-01' and receber.dtven <= '2022.09.22')`,
-            function (err, result) {
-                // IMPORTANT: close the connection
 
+                    db.detach();
 
-                db.detach();
+                    if (err) {
+                        return callback(err, []);
+                    } else {
+                        return callback(undefined, result);
+                    }
 
-                if (err) {
-                    return callback(err, []);
-                } else {
-                    return callback(undefined, result);
-                }
-
-            });
-
+                });
+        }
     });
 }
 

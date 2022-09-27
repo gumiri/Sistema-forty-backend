@@ -3,7 +3,7 @@ const brysa = require('./brysaflex/cliRecebAbertoBrysa');
 r = {};
 forty(function(err,result){
     if (err){
-        throw err;
+        console.log(err);
     }
     else{
         r.fortyflex = result;
@@ -11,7 +11,7 @@ forty(function(err,result){
 });
 brysa(function(err,result){
     if (err){
-        throw err;
+        console.log(err);
     }
     else{
         r.brysaflex = result;

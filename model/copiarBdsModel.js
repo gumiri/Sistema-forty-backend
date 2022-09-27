@@ -7,34 +7,52 @@ const dbFilePathFromBrysa = '//' + ipsServer.fortyflex + '/HTD-Brysaflex/Banco_D
 var today = new Date().getDate();
 var lastTimeCopy = 0;
 
-function copiarBds(callback) {
+async function copiarBds(callback) {
     if (lastTimeCopy == today) {
         callback({ err: 'Banco de dados já copiado hoje' }, []);
     }
     else {
-        /**
-        fs.copyFile(dbFilePathFromForty, dbFilePathToForty, (err) => {
-            if (err) {
-                callback(err, []);
-            }
-            else {
-                console.log("Banco de dados Fortyflex copiado")
-            }
-        });
-        
-        fs.copyFile(dbFilePathFromBrysa, dbFilePathToBrysa, (err) => {
-            if (err) {
-                callback(err, []);
-            }
-            else {
-                console.log("Banco de dados brysaflex copiado")
-            }
-        });
-        **/
+        await copyFortyflexDB(dbFilePathFromForty, dbFilePathToForty);
+        console.log("BD Forty copiado!");
+        await copyBrysaflexDB(dbFilePathFromBrysa, dbFilePathToBrysa);
+        console.log("BD Brysa copiado!");
         lastTimeCopy = today;
         callback(undefined, { message: "ok" });
-
-
     }
 }
+
+function copyFortyflexDB(dbFilePathFromForty, dbFilePathToForty) {
+    console.log('Copiando Banco de dados Fortyflex');
+    return new Promise(resolve => {
+        setTimeout(() => {
+            fs.copyFile(dbFilePathFromForty, dbFilePathToForty, (err) => {
+                if (err) {
+                    throw err;
+                }
+                else {
+                    resolve(true)
+                }
+            });
+        }, 320000)
+    });
+}
+
+function copyBrysaflexDB(dbFilePathFromBrysa, dbFilePathToBrysa) {
+    console.log('Copiando Banco de dados Brysaflex');
+    return new Promise(resolve => {
+        setTimeout(() => {
+            fs.copyFile(dbFilePathFromBrysa, dbFilePathToBrysa, (err) => {
+                if (err) {
+                    throw err;
+                }
+                else {
+                    resolve(true)
+                }
+            })
+        }, 320000);
+    });
+}
+
+
+
 module.exports = copiarBds;
