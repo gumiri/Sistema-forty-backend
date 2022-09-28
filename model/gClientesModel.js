@@ -3,26 +3,26 @@ const gClienteBrysa = require('./brysaflex/gClienteBrysa');
 
 r = {}
 
+gClienteForty('01.01.2022', function(err,result){
+    if(err){
+        console.log(err);
+    }
+    else{
+        r.fortyflex = result
+    }
+});
+gClienteBrysa('01.01.2022', function(err,result){
+    if(err){
+        console.log(err);
+    }
+    else{
+        r.brysaflex = result
+    }
+});
 
 
 function gClienteModel(callback){
-    gClienteForty('01.01.2022', function(err,result){
-        if(err){
-            callback(err,[]);
-        }
-        else{
-            r.fortyflex = result
-        }
-    });
-    gClienteBrysa('01.01.2022', function(err,result){
-        if(err){
-            callback(err,[]);
-        }
-        else{
-            r.brysaflex = result
-        }
-    });
-    
+    callback(undefined,r)
 }
 
 module.exports = gClienteModel;
