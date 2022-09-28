@@ -1,7 +1,7 @@
 const firebird = require('node-firebird');
 const options = require('../../config/firebirdConf');
 
-function cpGcliente(timestamp, callback) {
+function gCliente(timestamp, callback) {
     firebird.attach(options.fortyflex, function (err, db) {
         if (err) {
             callback(err, []);
@@ -12,13 +12,18 @@ function cpGcliente(timestamp, callback) {
                 where dtcadastro > ' ` + timestamp + `'
             `,
                 function (err, result) {
-
-
                     db.detach();
+
+                    if(err){
+                        callback(err,[]);
+                    }
+                    else{
+                        callback(undefined,result);
+                    }
                 });
         }
     });
 }
 
 
-module.exports = cpGcliente;
+module.exports = gCliente;
