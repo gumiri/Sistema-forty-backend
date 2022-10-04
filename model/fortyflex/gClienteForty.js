@@ -1,15 +1,15 @@
 const firebird = require('node-firebird');
 const options = require('../../config/firebirdConf');
 
-function gCliente(timestamp, callback) {
+function gCliente(timestamp, timelimit, callback) {
     firebird.attach(options.fortyflex, function (err, db) {
         if (err) {
             callback(err, []);
         }
         else {
             db.query(`
-                select * from GCLIENTE
-                where dtcadastro > ' ` + timestamp + `'
+                select r.*, 'FORTYFLEX' AS FILIAL from GCLIENTE r
+                where dtcadastro > ' ` + timestamp + `' and dtcadastro < '`+ timelimit +`'
             `,
                 function (err, result) {
                     db.detach();

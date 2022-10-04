@@ -2,13 +2,13 @@ const firebird = require('node-firebird');
 const options = require('../../config/firebirdConf');
 
 function gCliente(timestamp, timelimit, callback) {
-    firebird.attach(options.brysaflex, function (err, db) {
+    firebird.attach(options.alphaflex, function (err, db) {
         if (err) {
             callback(err, []);
         }
         else {
             db.query(`
-                select r.*, 'BRYSAFLEX' AS FILIAL from GCLIENTE r
+                select r.*, 'ALPHAFLEX' as FILIAL from GCLIENTE r
                 where dtcadastro > ' ` + timestamp + `' and dtcadastro < '`+ timelimit +`'
             `,
                 function (err, result) {
