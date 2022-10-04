@@ -22,7 +22,7 @@ Date.prototype.addDays = function (days) {
     return date;
 }
 
-var timestamp = new Date('01.01.2019');
+var timestamp = new Date('10.04.2022');
 
 
 function gClienteModel(callback) {
@@ -61,48 +61,53 @@ function gClienteModel(callback) {
                                                 console.log(err);
                                             }
                                             else {
-                                                r.mangmaster = result
-                                                var v = [];
-                                                var res = "";
-                                                for (let i = 0; i < Object.keys(r).length; i++) {
-                                                    for (let z = 0; z < Object.values(r)[i].length; z++) {
-                                                        for (let x = 0; x < Object.values(Object.values(r)[i][z]).length; x++) {
-                                                            v[x] = Object.values(Object.values(r)[i][z])[x];
-                                                        }
-                                                        for (let a = 0; a < v.length; a++) {
-                                                            if (typeof (v[a]) == "string") {
-                                                                res += `'${v[a]}',`;
+                                                r.mangmaster = result;
+                                                if (Object.toString(r) != Object.toString({fortyflex:[],brysaflex:[],alphaflex:[],fortyvinil:[],mangmaster:[]})) {
+                                                    var v = [];
+                                                    var res = "";
+                                                    for (let i = 0; i < Object.keys(r).length; i++) {
+                                                        for (let z = 0; z < Object.values(r)[i].length; z++) {
+                                                            for (let x = 0; x < Object.values(Object.values(r)[i][z]).length; x++) {
+                                                                v[x] = Object.values(Object.values(r)[i][z])[x];
                                                             }
-                                                            else if (typeof (v[a]) == "number") {
-                                                                res += `${v[a]},`;
-                                                            }
-                                                            else {
-                                                                if (v[a] == null) {
-                                                                    res += `null,`;
+                                                            for (let a = 0; a < v.length; a++) {
+                                                                if (typeof (v[a]) == "string") {
+                                                                    res += `'${v[a]}',`;
                                                                 }
-                                                                else if (typeof (v[a]) == "function") {
-                                                                    res += ``;
+                                                                else if (typeof (v[a]) == "number") {
+                                                                    res += `${v[a]},`;
                                                                 }
                                                                 else {
-                                                                    res += `'${v[a].stringDate()}',`;
+                                                                    if (v[a] == null) {
+                                                                        res += `null,`;
+                                                                    }
+                                                                    else if (typeof (v[a]) == "function") {
+                                                                        res += ``;
+                                                                    }
+                                                                    else {
+                                                                        res += `'${v[a].stringDate()}',`;
+                                                                    }
                                                                 }
                                                             }
+                                                            res = res.substr(0, res.length - 1);
+                                                            gClienteInsert(res, function (erro, result) {
+                                                                if (err) {
+                                                                    callback(erro, []);
+                                                                }
+                                                                else {
+                                                                    console.log("inserido");
+                                                                }
+                                                            });
+                                                            res = "";
+                                                            v = [];
                                                         }
-                                                        res = res.substr(0, res.length - 1);
-                                                        gClienteInsert(res, function (erro, result) {
-                                                            if (err) {
-                                                                callback(erro, []);
-                                                            }
-                                                            else {
-                                                                console.log("inserido");
-                                                            }
-                                                        });
-                                                        res = "";
-                                                        v = [];
                                                     }
+                                                    timestamp = timelimit;
+                                                    callback(undefined, r);
                                                 }
-                                                timestamp = timelimit;
-                                                callback(undefined, r);
+                                                else{
+                                                    callback({erro: 'Já está atualizado!'},[])
+                                                }
                                             }
                                         });
                                     }
