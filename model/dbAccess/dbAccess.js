@@ -9,14 +9,15 @@ async function dbAccess(ssql, options) {
             }
             else {
                 db.query(ssql, function (err, result) {
-                    db.detach();
                     if (err) {
-                        
+                        db.detach();
                         return reject(err);
                     }
                     else {
+                        db.detach();
                         return resolve(result);
                     }
+                    
                 });
             }
         })
