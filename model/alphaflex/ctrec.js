@@ -2,7 +2,7 @@ const dbAccess = require('../dbAccess/dbAccess');
 const options = require('../../config/firebirdConf');
 const db = options.alphaflex;
 
-async function getCtrecDate(date) {
+async function getCtrecDate(date1, date2) {
     try {
         r = await dbAccess(
         `select r.CODI, c.CNPJCPF, c.NOME, r.FIL, r.CODINF, r.ST, r.PARCIAL, r.ESPE, r.SERIE, r.NRTIT,
@@ -27,7 +27,7 @@ async function getCtrecDate(date) {
         from ctrec r
         inner join GCLIENTE c
         on r.CODIC = c.CODIGO
-        where r.dtven > '${date}'`, 
+        where r.dtven > '${date1}' and r.dtven < '${date2}'`, 
         db);
         return r;
     }
@@ -36,9 +36,9 @@ async function getCtrecDate(date) {
         return false;
     }
 }
-async function getCtrecLenthDateAberto(date) {
+async function getCtrecLenthDateAberto(date1, date2) {
     try {
-        let len = await dbAccess(`select count(*) from ctrec r where dtven > '${date}'`, db);
+        let len = await dbAccess(`select count(*) from ctrec r where r.dtven > '${date1}' and r.dtven < '${date2}'`, db);
         return len[0].COUNT;
     }
     catch (e) {

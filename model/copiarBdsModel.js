@@ -10,14 +10,12 @@ const dbFilePathToVinil = './banco_de_dados/HTD_DB_FORTYVINIL.FDB';
 const dbFilePathFromVinil = '//' + ipsServer.fortyflex + '/HTD-FortyVinil/Banco_Dados/HTD_DB.FDB';
 const dbFilePathToMang = './banco_de_dados/HTD_DB_MANGMASTER.FDB';
 const dbFilePathFromMang = '//' + ipsServer.fortyflex + '/HTD-MangMaster/Banco_Dados/HTD_DB.FDB';
-var today = new Date().getDate();
-var lastTimeCopy = 0;
+var today = new Date();
+nowInHour = today.getHours();
+var timeToCopy = 6;
 
-async function copiarBds(callback) {
-    if (lastTimeCopy == today) {
-        callback({ err: 'Banco de dados já copiado hoje' }, []);
-    }
-    else {
+async function copiarBds() {
+    if (timeToCopy == nowInHour) {
         await copyFortyflexDB(dbFilePathFromForty, dbFilePathToForty);
         console.log("BD Forty copiado!");
         await copyBrysaflexDB(dbFilePathFromBrysa, dbFilePathToBrysa);
@@ -28,9 +26,11 @@ async function copiarBds(callback) {
         console.log("BD Fortyvinil copiado!");
         await copyMangmasterDB(dbFilePathFromMang, dbFilePathToMang);
         console.log("BD Mang copiado!");
-        lastTimeCopy = today;
-        callback(undefined, { message: "Bancos de dados Copiados!!!" });
     }
+    else{
+        console.log(nowInHour);
+    }
+    
 }
 
 function copyFortyflexDB(dbFilePathFromForty, dbFilePathToForty) {

@@ -1,10 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const getctrec = require('../model/getCtrecModel');
+const getCtrec = require('../model/getCtrecModel');
 
-router.get('/', function(req,res){
-    getctrec(function(err,result){
-        if (err){
+
+router.get('/', (req,res) =>{
+    getCtrec(req.query.date1, req.query.date2, req.query.orderBy, function(err,result){
+        console.log(req.query.date1);
+        if(err){
             res.status(500).json(err);
         }
         else{
