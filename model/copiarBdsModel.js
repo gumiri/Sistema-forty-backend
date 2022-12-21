@@ -10,27 +10,20 @@ const dbFilePathToVinil = './banco_de_dados/HTD_DB_FORTYVINIL.FDB';
 const dbFilePathFromVinil = '//' + ipsServer.fortyflex + '/HTD-FortyVinil/Banco_Dados/HTD_DB.FDB';
 const dbFilePathToMang = './banco_de_dados/HTD_DB_MANGMASTER.FDB';
 const dbFilePathFromMang = '//' + ipsServer.fortyflex + '/HTD-MangMaster/Banco_Dados/HTD_DB.FDB';
-var today = new Date();
-nowInHour = today.getHours();
-var timeToCopy = 6;
+
+var timeToCopy = 14;
 
 async function copiarBds() {
-    if (timeToCopy == nowInHour) {
-        await copyFortyflexDB(dbFilePathFromForty, dbFilePathToForty);
-        console.log("BD Forty copiado!");
-        await copyBrysaflexDB(dbFilePathFromBrysa, dbFilePathToBrysa);
-        console.log("BD Brysa copiado!");
-        await copyAlphaflexDB(dbFilePathFromAlpha, dbFilePathToAlpha);
-        console.log("BD Alpha copiado!");
-        await copyFortyvinilDB(dbFilePathFromVinil, dbFilePathToVinil);
-        console.log("BD Fortyvinil copiado!");
-        await copyMangmasterDB(dbFilePathFromMang, dbFilePathToMang);
-        console.log("BD Mang copiado!");
-    }
-    else{
-        console.log(nowInHour);
-    }
-    
+    await copyFortyflexDB(dbFilePathFromForty, dbFilePathToForty);
+    console.log("BD Forty copiado!");
+    await copyBrysaflexDB(dbFilePathFromBrysa, dbFilePathToBrysa);
+    console.log("BD Brysa copiado!");
+    await copyAlphaflexDB(dbFilePathFromAlpha, dbFilePathToAlpha);
+    console.log("BD Alpha copiado!");
+    await copyFortyvinilDB(dbFilePathFromVinil, dbFilePathToVinil);
+    console.log("BD Fortyvinil copiado!");
+    await copyMangmasterDB(dbFilePathFromMang, dbFilePathToMang);
+    console.log("BD Mang copiado!");
 }
 
 function copyFortyflexDB(dbFilePathFromForty, dbFilePathToForty) {
@@ -65,7 +58,7 @@ function copyBrysaflexDB(dbFilePathFromBrysa, dbFilePathToBrysa) {
     });
 }
 function copyAlphaflexDB(dbFilePathFromAlpha, dbFilePathToAlpha) {
-    console.log('Copiando Banco de dados Brysaflex');
+    console.log('Copiando Banco de dados Alphaflex');
     return new Promise(resolve => {
         setTimeout(() => {
             fs.copyFile(dbFilePathFromAlpha, dbFilePathToAlpha, (err) => {
@@ -80,7 +73,7 @@ function copyAlphaflexDB(dbFilePathFromAlpha, dbFilePathToAlpha) {
     });
 }
 function copyFortyvinilDB(dbFilePathFromVinil, dbFilePathToVinil) {
-    console.log('Copiando Banco de dados Brysaflex');
+    console.log('Copiando Banco de dados Fortyvinil');
     return new Promise(resolve => {
         setTimeout(() => {
             fs.copyFile(dbFilePathFromVinil, dbFilePathToVinil, (err) => {
@@ -95,7 +88,7 @@ function copyFortyvinilDB(dbFilePathFromVinil, dbFilePathToVinil) {
     });
 }
 function copyMangmasterDB(dbFilePathFromMang, dbFilePathToMang) {
-    console.log('Copiando Banco de dados Brysaflex');
+    console.log('Copiando Banco de dados Mangmaster');
     return new Promise(resolve => {
         setTimeout(() => {
             fs.copyFile(dbFilePathFromMang, dbFilePathToMang, (err) => {

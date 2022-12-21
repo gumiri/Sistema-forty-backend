@@ -9,6 +9,21 @@ class BinaryTreeSearch {
     constructor() {
         this.root = null;
     }
+    toArray(){
+        r = [];
+        this.toArrayR(this.root, r);
+        return r;
+    }
+
+    toArrayR(node, array){
+        if (node == null){
+            return;
+        }
+        
+        this.toArrayR(node.left, array);
+        array.push(node.value);
+        this.toArrayR(node.right, array);
+    }
 
     insertClienteIntoTreeP(root, value) {
         if (root == null) {
