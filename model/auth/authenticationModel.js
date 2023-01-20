@@ -1,6 +1,6 @@
 const users = require('./users');
 const tokens = require('./tokens');
-const timeToTokenExpire = 300000;
+const timeToTokenExpire = 1200000;
 
 function isUser(user) {
     for (let i = 0; i < users.length; i++) {
