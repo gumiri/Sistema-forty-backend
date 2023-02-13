@@ -162,9 +162,7 @@ async function getCtrecModel(date1, date2, token, orderBy, callback) {
     var date2 = `${date2}`;
     date2 = date2.substring(0, 4) + '.' + date2.substring(4, 6) + '.' + date2.substring(6, 8);
     var r = await todosCtrecs(date1, date2);
-    console.log('ctrec carregados');
     var c = await todosClientes();
-    console.log('clientes carregados');
     var dt = new Date(date1);
     receber = contasReceber(r, c, orderBy, dt)
     if (!r) {

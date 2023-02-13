@@ -8,26 +8,17 @@ const getCtrecController = require('./controller/getCtrecController');
 const getHistoricoClienteController = require('./controller/historicoClienteController');
 const getClientes = require('./controller/todosClientesController');
 const getEstoque = require('./controller/controleEstoqueController');
-const getEstoqueAlphaflex = require('./controller/estoqueAlphaflexController.js');
-const getEstoqueMangmaster = require('./controller/estoqueMangmasterController');
-const getEstoqueFortyflex = require('./controller/estoqueFortyflexController');
-const getEstoqueFortyvinil = require('./controller/estoqueFortyvinilController');
 const getEstoqueConsolidado = require('./controller/estoqueConsolidadoController');
+const getEstoquePorDataFortyflex = require('./controller/estoquePorDataFortyflexController')
 const auth = require('./controller/authenticationController');
 
 app.use(cors());
 
 app.use(bodyParser.json());
 
+app.use("/estoque-data-fortyflex", getEstoquePorDataFortyflex);
+
 app.use("/estoque-total", getEstoqueConsolidado);
-
-app.use("/estoque-fortyflex", getEstoqueFortyflex);
-
-app.use("/estoque-fortyvinil", getEstoqueFortyvinil);
-
-app.use("/estoque-mangmaster", getEstoqueMangmaster);
-
-app.use("/estoque-alphaflex", getEstoqueAlphaflex);
 
 app.use("/estoque", getEstoque);
 

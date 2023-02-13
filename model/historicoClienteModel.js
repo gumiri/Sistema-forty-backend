@@ -82,7 +82,6 @@ async function getHistoricoCliente(codigoCliente, dtHoje, callback) {
     let dt = dtHoje;
     dt = dt.substring(0, 4) + '.' + dt.substring(4, 6) + '.' + dt.substring(6, 8);
     var historico = await loadHistorico(codigoCliente, dt, 20);
-    console.log('Historico carregado!');
     if (!historico) {
         callback({ err: 'erro ao ler base de dados' }, []);
     }

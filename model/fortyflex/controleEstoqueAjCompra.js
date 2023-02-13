@@ -10,7 +10,7 @@ async function getEntradaSaida(dtmov) {
         FROM MPKARDEX r
         inner join MPALMO a on (a.CODI = r.CODIALMO)
         inner join MPAJUSTE j on (j.CODI = r.CODIAJU)
-        where j.LOTE = 1 and (a.GRU1 >= 6 and a.GRU1 <= 12) and r.DTMOV > '${dtmov}'
+        where j.LOTE = 1 and (a.GRU1 >= 6 and a.GRU1 <= 12) and r.DTMOV >= '${dtmov}'
         order by r.DTMOV desc
         `, db);
         return r;

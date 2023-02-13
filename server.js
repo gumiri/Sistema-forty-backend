@@ -5,6 +5,7 @@ const port = 3000;
 const server = http.createServer(app);
 server.listen(port);
 
+
 async function copiarBd() {
     try {
         await copiar.copiarBds();
@@ -18,7 +19,7 @@ async function copiarBd() {
     }
     catch (e) {
         console.log(e);
-        console.log('Tentando novamente daqui 1 hora');
+        console.log('Tentando novamente daqui meia hora');
     }
     server.listen(port);
 }

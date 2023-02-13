@@ -1,3 +1,5 @@
+var needUserPermission = false;
+
 const fortyflexEstoque = require('./fortyflex/controleEstoque');
 const fortyvinilEstoque = require('./fortyvinil/controleEstoque');
 const mangmasterEstoque = require('./mangmaster/controleEstoque');
@@ -27,12 +29,8 @@ const op = {
     'CadFTNF': 'Venda'
 }
 
-const today = new Date();
-const diasAMenos = 365 + 18;
-var aPartirDe = new Date(today - (60 * 60 * 24 * 1000 * diasAMenos));
-aPartirDe = dateToString(aPartirDe);
 
-async function loadEstoque() {
+async function loadEstoque(aPartirDe) {
     let forty = await fortyflexEstoque.getEntradaSaida(aPartirDe);
     let vinil = await fortyvinilEstoque.getEntradaSaida(aPartirDe);
     let mang = await mangmasterEstoque.getEntradaSaida(aPartirDe);
@@ -56,7 +54,7 @@ async function loadEstoque() {
         for (let z = 0; z < historico[i].length; z++) {
             let hist = historico[i][z];
             let dt = new Date(hist.DTMOV);
-            dt.setHours(hist.HR.slice(0,2) - 3, hist.HR.slice(3,5), hist.HR.slice(6,8));
+            dt.setHours(hist.HR.slice(0, 2) - 3, hist.HR.slice(3, 5), hist.HR.slice(6, 8));
             let data = {
                 'NOPERACAO': hist.MV,
                 'DESCRICAO': hist.DES,
@@ -64,7 +62,7 @@ async function loadEstoque() {
                 'QUANTIDADE': hist.QT,
                 'VALOR': hist.VLR,
                 'ES': hist.TPES,
-                'OPERACAO': (op[hist.PROGRAMA] != null ? op[hist.PROGRAMA]: hist.PROGRAMA),
+                'OPERACAO': (op[hist.PROGRAMA] != null ? op[hist.PROGRAMA] : hist.PROGRAMA),
                 'FILIAL': hist.FILIAL,
             }
             r.push(data);
@@ -82,20 +80,22 @@ async function loadEstoque() {
 }
 
 
-async function getEstoque(token, callback) {
-    if (token) {
-        let userToken = tokens.getTokenObjectByToken(token);
-        tokens.removeExpiredUserToken(userToken.user);
-        if (userToken.token != token || !userToken.auth.includes('estoque')) {
+async function getEstoque(token, date, callback) {
+    if (needUserPermission) {
+        if (token) {
+            let userToken = tokens.getTokenObjectByToken(token);
+            tokens.removeExpiredUserToken(userToken.user);
+            if (userToken.token != token || !userToken.auth.includes('estoque')) {
+                callback({ err: 'erro, usuário não autorizado' }, []);
+                return 0;
+            }
+        }
+        else {
             callback({ err: 'erro, usuário não autorizado' }, []);
             return 0;
         }
     }
-    else{
-        callback({ err: 'erro, usuário não autorizado' }, []);
-        return 0;
-    }
-    const estoque = await loadEstoque();
+    const estoque = await loadEstoque(date);
     if (!estoque) {
         callback({ err: 'erro ao ler base de dados' }, []);
     }

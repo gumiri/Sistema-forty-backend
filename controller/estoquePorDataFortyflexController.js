@@ -1,16 +1,17 @@
 const express = require('express');
 const router = express.Router();
-const criarHtdUnificado = require('../model/criarHtdUnificado');
+const getEstoque = require('../model/estoquePorDataFortyflexModel');
+
 
 router.get('/', (req,res) =>{
-    criarHtdUnificado((err,result)=>{
+    getEstoque(req.query.token, req.query.date, function(err,result){
         if(err){
             res.status(500).json(err);
         }
         else{
             res.status(200).json(result);
         }
-    })
+    });
 })
 
 module.exports = router;

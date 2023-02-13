@@ -4,7 +4,7 @@ const getEstoque = require('../model/controleEstoqueModel');
 
 
 router.get('/', (req,res) =>{
-    getEstoque(req.query.token, function(err,result){
+    getEstoque(req.query.token, req.query.date, function(err,result){
         if(err){
             res.status(500).json(err);
         }

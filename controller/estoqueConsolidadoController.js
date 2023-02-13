@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const getEstoque = require('../model/estoqueConsolidado');
+const getEstoque = require('../model/estoqueConsolidado copy');
 
 
 router.get('/', (req,res) =>{
-    getEstoque(req.query.token, function(err,result){
+    getEstoque(req.query.token, req.query.date, function(err,result){
         if(err){
             res.status(500).json(err);
         }

@@ -87,7 +87,6 @@ async function getClientes(token, orderBy, callback) {
         return 0;
     }
     var c = await todosClientes(orderBy);
-    console.log('clientes carregados');
     if (!r) {
         callback({ err: 'erro ao ler base de dados' }, []);
     }

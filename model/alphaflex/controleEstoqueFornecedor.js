@@ -10,7 +10,7 @@ async function getEntradaFornecedores(dtmov) {
         FROM MPKARDEX r        
         inner join MPALMO a on (a.CODI = r.CODIALMO)
         inner join GFORN f on (r.CODIFOR = f.CODIGO)
-        where (a.GRU1 >= 6 and a.GRU1 <= 12) and r.DTMOV > '${dtmov}'
+        where (a.GRU1 >= 6 and a.GRU1 <= 12) and r.DTMOV >= '${dtmov}'
         order by r.DTMOV desc
         `, db);
         return r;
