@@ -1,0 +1,362 @@
+[
+  {
+    "CODI": 68,
+    "DES": "MANGUEIRA P/ PISCINA 25MM INTEX AZUL E BRANCA - 2MT",
+    "UNI": "UNID",
+    "QTD": 2
+  },
+  {
+    "CODI": 69,
+    "DES": "MANGUEIRA P/ PISCINA 25MM INTEX AZUL E BRANCA - 4MT",
+    "UNI": "UNID",
+    "QTD": 4
+  },
+  {
+    "CODI": 70,
+    "DES": "MANGUEIRA P/ PISCINA 25MM INTEX AZUL E BRANCA - 6MT",
+    "UNI": "UNID",
+    "QTD": 6
+  },
+  {
+    "CODI": 71,
+    "DES": "MANGUEIRA P/ PISCINA 25MM INTEX AZUL E BRANCA - 3MT",
+    "UNI": "UNID",
+    "QTD": 3
+  },
+  {
+    "CODI": 92,
+    "DES": "MANGUEIRA PARA PISCINA AZUL 38 MM PÇ DE 4 MTS",
+    "UNI": "UNID",
+    "QTD": 4
+  },
+  {
+    "CODI": 93,
+    "DES": "MANGUEIRA PARA PISCINA AZUL 38 MM PÇ DE 5 MTS",
+    "UNI": "UNID",
+    "QTD": 5
+  },
+  {
+    "CODI": 94,
+    "DES": "MANGUEIRA PARA PISCINAAZUL 38 MM PÇ DE 6 MTS",
+    "UNI": "UNID",
+    "QTD": 6
+  },
+  {
+    "CODI": 95,
+    "DES": "MANGUEIRA PARA PISCINA AZUL 38 MM PÇ DE 8 MTS",
+    "UNI": "UNID",
+    "QTD": 8
+  },
+  {
+    "CODI": 96,
+    "DES": "MANGUEIRA PARA PISCINA 38MM EVA AZUL - 10MTS",
+    "UNI": "UNID",
+    "QTD": 10
+  },
+  {
+    "CODI": 100,
+    "DES": "MANGUEIRA  P/ PISCINA 38MM ULTRAFLEX 5 MT",
+    "UNI": "PC",
+    "QTD": 5
+  },
+  {
+    "CODI": 101,
+    "DES": "MANGUEIRA P/ PISCINA 38MM ULTRAFLEX 6 MT",
+    "UNI": "PC",
+    "QTD": 6
+  },
+  {
+    "CODI": 102,
+    "DES": "MANGUEIRA P/ PISCINA 38MM ULTRAFLEX 7 MT",
+    "UNI": "PC",
+    "QTD": 7
+  },
+  {
+    "CODI": 103,
+    "DES": "MANGUEIRA P/ PISCINA 38MM ULTRAFLEX 8 MT",
+    "UNI": "PC",
+    "QTD": 8
+  },
+  {
+    "CODI": 145,
+    "DES": "MANGUEIRA PARA PISCINA 19MM AZUL E BRANCA/5MTS",
+    "UNI": "UNID",
+    "QTD": 5
+  },
+  {
+    "CODI": 151,
+    "DES": "MANGUEIRA P/ PISCINA 25MM INTEX AZUL E BRANCA - 5MT",
+    "UNI": "UNID",
+    "QTD": 5
+  },
+  {
+    "CODI": 187,
+    "DES": "MANGUEIRA  P/ PISCINA 38MM ULTRAFLEX 4 MT",
+    "UNI": "PC",
+    "QTD": 4
+  },
+  {
+    "CODI": 190,
+    "DES": "KIT PISCINA ULTRAFLEX 38MM - 8 MTS 2 COM PONTEIRAS",
+    "UNI": "PC",
+    "QTD": 8
+  },
+  {
+    "CODI": 188,
+    "DES": "MANGUEIRA PARA PISCINA ULTRAFLEX 38 MM X 10 MTS",
+    "UNI": "PC",
+    "QTD": 10
+  },
+  {
+    "CODI": 189,
+    "DES": "MANGUEIRA P/ PISCINA 38MM ULTRAFLEX 12 MT",
+    "UNI": "PC",
+    "QTD": 12
+  },
+  {
+    "CODI": 191,
+    "DES": "KIT PISCINA ULTRAFLEX 38MM - 5 MTS 2 COM PONTEIRAS",
+    "UNI": "PC",
+    "QTD": 5
+  },
+  {
+    "CODI": 192,
+    "DES": "KIT PISCINA ULTRAFLEX 38MM - 6 MTS 2 COM PONTEIRAS",
+    "UNI": "PC",
+    "QTD": 6
+  },
+  {
+    "CODI": 214,
+    "DES": "MANGUEIRA  P/ PISCINA 38MM ULTRAFLEX 9 MT",
+    "UNI": "PC",
+    "QTD": 9
+  },
+  {
+    "CODI": 215,
+    "DES": "MANGUEIRA  P/ PISCINA 38MM ULTRAFLEX 11 MT",
+    "UNI": "PC",
+    "QTD": 11
+  },
+  {
+    "CODI": 272,
+    "DES": "MANGUEIRA P/ PISCINA 38MM EVA AZUL - 4MT",
+    "UNI": "UNID",
+    "QTD": 4
+  },
+  {
+    "CODI": 273,
+    "DES": "MANGUEIRA P/ PISCINA 38MM EVA AZUL - 5MT",
+    "UNI": "UNID",
+    "QTD": 5
+  },
+  {
+    "CODI": 274,
+    "DES": "MANGUEIRA P/ PISCINA 38MM EVA AZUL - 6MT",
+    "UNI": "UNID",
+    "QTD": 6
+  },
+  {
+    "CODI": 275,
+    "DES": "MANGUEIRA P/ PISCINA 38MM EVA AZUL - 8MT",
+    "UNI": "UNID",
+    "QTD": 8
+  },
+  {
+    "CODI": 278,
+    "DES": "KIT PARA PISCINA AZ/TR FLEX COM 2 PONTEIRAS - 5MTS",
+    "UNI": "UNID",
+    "QTD": 5
+  },
+  {
+    "CODI": 279,
+    "DES": "KIT PARA PISCINA AZ/TR FLEX COM 2 PONTEIRAS - 6MTS",
+    "UNI": "UNID",
+    "QTD": 6
+  },
+  {
+    "CODI": 280,
+    "DES": "KIT PARA PISCINA AZ/TR FLEX COM 2 PONTEIRAS - 7MTS",
+    "UNI": "UNID",
+    "QTD": 7
+  },
+  {
+    "CODI": 281,
+    "DES": "KIT PARA PISCINA AZ/TR FLEX COM 2 PONTEIRAS - 8MTS",
+    "UNI": "UNID",
+    "QTD": 8
+  },
+  {
+    "CODI": 282,
+    "DES": "KIT PARA PISCINA AZ/TR FLEX COM 2 PONTEIRAS - 10MTS",
+    "UNI": "UNID",
+    "QTD": 10
+  },
+  {
+    "CODI": 283,
+    "DES": "KIT PARA PISCINA AZ/TR FLEX COM 2 PONTEIRAS - 4MTS",
+    "UNI": "UNID",
+    "QTD": 4
+  },
+  {
+    "CODI": 297,
+    "DES": "MANGUEIRA  25MM AZUL E BRANCA INTEX 5MTS",
+    "UNI": "UNID",
+    "QTD": 5
+  },
+  {
+    "CODI": 311,
+    "DES": "KIT PISCINA ULTRAFLEX 38MM - 2 MTS 2 COM PONTEIRAS",
+    "UNI": "PC",
+    "QTD": 2
+  },
+  {
+    "CODI": 312,
+    "DES": "KIT PISCINA ULTRAFLEX 38MM - 3 MTS 2 COM PONTEIRAS",
+    "UNI": "PC",
+    "QTD": 3
+  },
+  {
+    "CODI": 313,
+    "DES": "KIT PISCINA ULTRAFLEX 38MM - 4 MTS 2 COM PONTEIRAS",
+    "UNI": "PC",
+    "QTD": 4
+  },
+  {
+    "CODI": 314,
+    "DES": "KIT PISCINA ULTRAFLEX 38MM - 7 MTS 2 COM PONTEIRAS",
+    "UNI": "PC",
+    "QTD": 7
+  },
+  {
+    "CODI": 315,
+    "DES": "KIT PISCINA ULTRAFLEX 38MM - 9 MTS 2 COM PONTEIRAS",
+    "UNI": "PC",
+    "QTD": 9
+  },
+  {
+    "CODI": 316,
+    "DES": "KIT PISCINA ULTRAFLEX 38MM - 10 MTS 2 COM PONTEIRAS",
+    "UNI": "PC",
+    "QTD": 10
+  },
+  {
+    "CODI": 317,
+    "DES": "KIT PISCINA ULTRAFLEX 38MM - 11 MTS 2 COM PONTEIRAS",
+    "UNI": "PC",
+    "QTD": 11
+  },
+  {
+    "CODI": 318,
+    "DES": "KIT PISCINA ULTRAFLEX 38MM - 12 MTS 2 COM PONTEIRAS",
+    "UNI": "PC",
+    "QTD": 12
+  },
+  {
+    "CODI": 393,
+    "DES": "MANGUEIRA P PISCINA 38MM  ULTRAFLEX GRENÁ /50MTS",
+    "UNI": "UNID",
+    "QTD": 50
+  },
+  {
+    "CODI": 417,
+    "DES": "MANGUEIRA  P/ PISCINA 38MM ULTRAFLEX 2 MT",
+    "UNI": "PC",
+    "QTD": 2
+  },
+  {
+    "CODI": 418,
+    "DES": "MANGUEIRA  P/ PISCINA 38MM ULTRAFLEX 3 MT",
+    "UNI": "PC",
+    "QTD": 3
+  },
+  {
+    "CODI": 420,
+    "DES": "MANGUEIRA P/ PISCINA 38MM EVA AZUL/BCA 3 MTS",
+    "UNI": "UNI",
+    "QTD": 3
+  },
+  {
+    "CODI": 378,
+    "DES": "KIT MANGUEIRA AZUL E TRANSPARENTE - 4 METROS",
+    "UNI": "PC",
+    "QTD": 4
+  },
+  {
+    "CODI": 379,
+    "DES": "KIT MANGUEIRA AZUL E TRANSPARENTE - 5 METROS",
+    "UNI": "PC",
+    "QTD": 5
+  },
+  {
+    "CODI": 380,
+    "DES": "KIT MANGUEIRA AZUL E TRANSPARENTE - 6 METROS",
+    "UNI": "PC",
+    "QTD": 6
+  },
+  {
+    "CODI": 381,
+    "DES": "KIT MANGUEIRA AZUL E TRANSPARENTE - 7 METROS",
+    "UNI": "PC",
+    "QTD": 7
+  },
+  {
+    "CODI": 382,
+    "DES": "KIT MANGUEIRA AZUL E TRANSPARENTE - 8 METROS",
+    "UNI": "PC",
+    "QTD": 8
+  },
+  {
+    "CODI": 411,
+    "DES": "MANGUEIRA P/ PISCINA 38MM EVA AZUL - 7MT",
+    "UNI": "PC",
+    "QTD": 7
+  },
+  {
+    "CODI": 421,
+    "DES": "MANGUEIRA P/ PISCINA 38MM EVA AZUL/BCA 4 MTS",
+    "UNI": "UNI",
+    "QTD": 4
+  },
+  {
+    "CODI": 422,
+    "DES": "MANGUEIRA P/ PISCINA 38MM EVA AZUL/BCA 5 MTS",
+    "UNI": "UNI",
+    "QTD": 5
+  },
+  {
+    "CODI": 423,
+    "DES": "MANGUEIRA P/ PISCINA 38MM EVA AZUL/BCA 6 MTS",
+    "UNI": "UNI",
+    "QTD": 6
+  },
+  {
+    "CODI": 424,
+    "DES": "MANGUEIRA P/ PISCINA 38MM EVA AZUL/BCA 8 MTS",
+    "UNI": "UNI",
+    "QTD": 8
+  },
+  {
+    "CODI": 425,
+    "DES": "MANGUEIRA P/ PISCINA 38MM EVA AZUL/BCA 10 MTS",
+    "UNI": "UNI",
+    "QTD": 10
+  },
+  {
+    "CODI": 426,
+    "DES": "MANGUEIRA P/ PISCINA 38MM EVA AZUL/BCA 25 MTS",
+    "UNI": "UNI",
+    "QTD": 25
+  },
+  {
+    "CODI": 414,
+    "DES": "KIT MANGUEIRA AZUL E TRANSPARENTE - 10 METROS",
+    "UNI": "PC",
+    "QTD": 10
+  },
+  {
+    "CODI": 448,
+    "DES": "MANGUEIRA P/ PISCINA 38MM EVA AZUL - 3MT",
+    "UNI": "PC",
+    "QTD": 3
+  }
+]

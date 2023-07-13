@@ -1,0 +1,104 @@
+[
+  {
+    "CODI": 23,
+    "DES": "MANGUEIRA PARA PISCINA INTEX 25MM 2 MTS",
+    "UNI": "UNID",
+    "QTD": 2
+  },
+  {
+    "CODI": 24,
+    "DES": "MANGUEIRA PARA PISCINA INTEX 25MM 3 MTS",
+    "UNI": "UNID",
+    "QTD": 3
+  },
+  {
+    "CODI": 25,
+    "DES": "MANGUEIRA PARA PISCINA INTEX 25MM 4 MTS",
+    "UNI": "UNID",
+    "QTD": 4
+  },
+  {
+    "CODI": 26,
+    "DES": "MANGUEIRA PARA PISCINA INTEX 25MM 5 MTS",
+    "UNI": "UNID",
+    "QTD": 5
+  },
+  {
+    "CODI": 27,
+    "DES": "MANGUEIRA PARA PISCINA INTEX 25MM 6 MTS",
+    "UNI": "UNID",
+    "QTD": 6
+  },
+  {
+    "CODI": 119,
+    "DES": "MANGUEIRA PARA PISCINA 38MM FLEX PLUS / 5 MTS",
+    "UNI": "PÇ",
+    "QTD": 5
+  },
+  {
+    "CODI": 120,
+    "DES": "MANGUEIRA PARA PISCINA  38MM FLEX PLUS / 6MTS",
+    "UNI": "PÇ",
+    "QTD": 6
+  },
+  {
+    "CODI": 121,
+    "DES": "MANGUEIRA PARA PISCINA 38MM FLEX PLUS / 7 MTS",
+    "UNI": "PÇ",
+    "QTD": 7
+  },
+  {
+    "CODI": 122,
+    "DES": "MANGUEIRA PARA PISCINA 38MM FLEX PLUS / 8 MTS",
+    "UNI": "PÇ",
+    "QTD": 8
+  },
+  {
+    "CODI": 123,
+    "DES": "MANGUEIRA PARA PISCINA  38MM FLEX PLUS / 9 MTS",
+    "UNI": "PÇ",
+    "QTD": 9
+  },
+  {
+    "CODI": 124,
+    "DES": "MANGUEIRA PARA PISCINA  38MM FLEX PLUS / 10 MTS",
+    "UNI": "PÇ",
+    "QTD": 10
+  },
+  {
+    "CODI": 125,
+    "DES": "MANGUEIRA PARA PISCINA 38MM FLEX PLUS / 11 MTS",
+    "UNI": "PÇ",
+    "QTD": 11
+  },
+  {
+    "CODI": 126,
+    "DES": "MANGUEIRA PARA PISCINA 38MM FLEX PLUS / 12 MTS",
+    "UNI": "PÇ",
+    "QTD": 12
+  },
+  {
+    "CODI": 145,
+    "DES": "MANGUEIRA PARA PISCINA 38MM PRETA 10MTS",
+    "UNI": "PÇ",
+    "QTD": 10
+  },
+  {
+    "CODI": 146,
+    "DES": "MANGUEIRA PARA PISCINA 38MM PRETA 20MTS",
+    "UNI": "PÇ",
+    "QTD": 10
+  },
+  {
+    "CODI": 150,
+    "DES": "MANGUEIRA 32MM PRETA ASP PO /1.50 MT",
+    "UNI": "PÇ",
+    "QTD": 1.5
+  },
+  {
+    "CODI": 151,
+    "DES": "MANGUEIRA 32MM PRETA ASP PO / 2 MTs",
+    "UNI": "PÇ",
+    "QTD": 2
+  }
+]

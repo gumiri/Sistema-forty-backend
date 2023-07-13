@@ -1,19 +1,20 @@
 const fs = require('fs');
+const { dirname } = require('path');
 const ipsServer = require('../config/serversConf');
-const dbFilePathToForty = './banco_de_dados/HTD_DB_FORTYFLEX.FDB';
-const dbFilePathToFortyTemp = './banco_de_dados/HTD_DB_FORTYFLEXTemp.FDB';
+const dbFilePathToForty = dirname(require.main.filename) + '/banco_de_dados/HTD_DB_FORTYFLEX.FDB';
+const dbFilePathToFortyTemp = dirname(require.main.filename) + '/banco_de_dados/HTD_DB_FORTYFLEXTemp.FDB';
 const dbFilePathFromForty = '//' + ipsServer.fortyflex + '/HTD-FortyFlex/Banco_Dados/HTD_DB.FDB';
-const dbFilePathToBrysa = './banco_de_dados/HTD_DB_BRYSAFLEX.FDB';
-const dbFilePathToBrysaTemp = './banco_de_dados/HTD_DB_BRYSAFLEXTemp.FDB';
+const dbFilePathToBrysa =dirname(require.main.filename) + '/banco_de_dados/HTD_DB_BRYSAFLEX.FDB';
+const dbFilePathToBrysaTemp = dirname(require.main.filename) + '/banco_de_dados/HTD_DB_BRYSAFLEXTemp.FDB';
 const dbFilePathFromBrysa = '//' + ipsServer.fortyflex + '/HTD-Brysaflex/Banco_Dados/HTD_DB.FDB';
-const dbFilePathToAlpha = './banco_de_dados/HTD_DB_ALPHAFLEX.FDB';
-const dbFilePathToAlphaTemp = './banco_de_dados/HTD_DB_ALPHAFLEXTemp.FDB';
-const dbFilePathFromAlpha = '//' + ipsServer.alphaflex + '/htd_ff_alphaflex/Banco_Dados/HTD_DB.FDB';
-const dbFilePathToVinil = './banco_de_dados/HTD_DB_FORTYVINIL.FDB';
-const dbFilePathToVinilTemp = './banco_de_dados/HTD_DB_FORTYVINILTemp.FDB';
+const dbFilePathToAlpha = dirname(require.main.filename) + '/banco_de_dados/HTD_DB_ALPHAFLEX.FDB';
+const dbFilePathToAlphaTemp = dirname(require.main.filename) + '/banco_de_dados/HTD_DB_ALPHAFLEXTemp.FDB';
+const dbFilePathFromAlpha = '//' + ipsServer.alphaflex + '/HTD-Alphaflex/Banco_Dados/HTD_DB.FDB';
+const dbFilePathToVinil = dirname(require.main.filename) + '/banco_de_dados/HTD_DB_FORTYVINIL.FDB';
+const dbFilePathToVinilTemp = dirname(require.main.filename) + '/banco_de_dados/HTD_DB_FORTYVINILTemp.FDB';
 const dbFilePathFromVinil = '//' + ipsServer.fortyflex + '/HTD-FortyVinil/Banco_Dados/HTD_DB.FDB';
-const dbFilePathToMang = './banco_de_dados/HTD_DB_MANGMASTER.FDB';
-const dbFilePathToMangTemp = './banco_de_dados/HTD_DB_MANGMASTERTemp.FDB';
+const dbFilePathToMang = dirname(require.main.filename) + '/banco_de_dados/HTD_DB_MANGMASTER.FDB';
+const dbFilePathToMangTemp = dirname(require.main.filename) + '/banco_de_dados/HTD_DB_MANGMASTERTemp.FDB';
 const dbFilePathFromMang = '//' + ipsServer.fortyflex + '/HTD-MangMaster/Banco_Dados/HTD_DB.FDB';
 
 async function copiarBds() {

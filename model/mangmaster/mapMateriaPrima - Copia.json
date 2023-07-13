@@ -1,0 +1,56 @@
+[
+  {
+    "CODIGO": 1,
+    "DES": "POLIETILENO DE BAIXA DENS. LINEAR (PEBDL)",
+    "COD": [174,175,164,171],
+    "MANG": [6,5,118,112,45,180,10,9,16,15]
+  },
+  {
+    "CODIGO": 2,
+    "DES": "POLIETILENO DE BAIXA DENS. (PEBD) CRISTAL",
+    "COD": [163,161,167],
+    "MANG": [6,5,118,112,45,180,10,9,16,15]
+  },
+  {
+    "CODIGO": 3,
+    "DES": "POLIETILENO DE BAIXA DENS. (PEBD) TX 7003",
+    "COD": [170],
+    "MANG": [6,5,118,112,45,180,10,9,16,15]
+  },
+  {
+    "CODIGO": 4,
+    "DES": "POLIETILENO DE BAIXA DENS. (PEBD) CANELA",
+    "COD": [],
+    "MANG": [109,68,130,108,18,17,20,19,14,13,8,7,11,23,24,25,26,27,22,21]
+  },
+  {
+    "CODIGO": 5,
+    "DES": "POLIETILENO DE ALTA DENS. (PEAD) 4810",
+    "COD": [166,165,185,186],
+    "MANG": [177,4,3]
+  },
+  {
+    "CODIGO": 6,
+    "DES": "EVA PN 2021",
+    "COD": [],
+    "MANG": [177,4,3]
+  },
+  {
+    "CODIGO": 7,
+    "DES": "EVA MARPOL",
+    "COD": [],
+    "MANG": [177,4,3]
+  },
+  {
+    "CODIGO": 8,
+    "DES": "EVA RECICLADO",
+    "COD": [],
+    "MANG": [109,68,130,108,18,17,20,19,14,13,8,7,11,23,24,25,26,27,22,21]
+  },
+  {
+    "CODIGO": 9,
+    "DES": "PIGMENTO",
+    "COD": [],
+    "MANG": []
+  }
+]

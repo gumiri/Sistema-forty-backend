@@ -107,7 +107,7 @@ function getFornecedorByCodigo(codigo, estoque) {
     let isInResult = false;
     for (let i = 0; i < estoque.length; i++) {
         if (codigo == estoque[i]['CODIALMO']) {
-            for (let z = 0; z < r.length; z++) {
+            for (let z = 0; z < result.length; z++) {
                 if (estoque[i]['NOME'] == result[z]) {
                     isInResult = true;
                 }
@@ -269,7 +269,7 @@ async function getEstoque(token, date, callback) {
         if (token) {
             let userToken = tokens.getTokenObjectByToken(token);
             tokens.removeExpiredUserToken(userToken.user);
-            if (userToken.token != token || !userToken.auth.includes('estoque')) {
+            if (userToken.token != token || !userToken.auth.includes('acessorios')) {
                 callback({ err: 'erro, usuário não autorizado' }, []);
                 return 0;
             }

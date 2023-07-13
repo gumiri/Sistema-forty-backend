@@ -17,6 +17,7 @@ function diasDeAtraso (dtven, dtrec){
 }
 
 async function loadHistorico(codigoCliente, dtHoje, qtdRegistros) {
+    let result = [];
     let forty = await fortyflexHistorico.getHistoricoCliente(codigoCliente, dtHoje, qtdRegistros);
     let brysa = await brysaflexHistorico.getHistoricoCliente(codigoCliente, dtHoje, qtdRegistros);
     let vinil = await fortyvinilHistorico.getHistoricoCliente(codigoCliente, dtHoje, qtdRegistros);
@@ -73,15 +74,19 @@ async function loadHistorico(codigoCliente, dtHoje, qtdRegistros) {
             }
     }
     if (r.length >= 3){
-        r = [r[r.length - 1], r[r.length - 2], r[r.length - 3]];
+        for (let i = 0; i < qtdRegistros; i++){
+            result.push(r[r.length -(i)])
+        }
+        //r = [r[r.length - 1], r[r.length - 2], r[r.length - 3]];
     }
 
     return r;
 }
 async function getHistoricoCliente(codigoCliente, dtHoje, callback) {
+    let qtdRegistros = 10;
     let dt = dtHoje;
     dt = dt.substring(0, 4) + '.' + dt.substring(4, 6) + '.' + dt.substring(6, 8);
-    var historico = await loadHistorico(codigoCliente, dt, 20);
+    var historico = await loadHistorico(codigoCliente, dt, qtdRegistros);
     if (!historico) {
         callback({ err: 'erro ao ler base de dados' }, []);
     }
