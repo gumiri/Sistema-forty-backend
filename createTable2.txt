@@ -1,0 +1,3 @@
+create table DBUPDATETIME (
+TIMESTMP date not null primary key
+)

@@ -1,0 +1,92 @@
+[
+  {
+    "CODI": 8,
+    "DES": "B7.999.0033 MANGUEIRA FLEXIVEL PRETA 32MM 1.4 METROS",
+    "UNI": "PC",
+    "QTD": 1.4
+  },
+  {
+    "CODI": 17,
+    "DES": "B3.752.0077 MANGUEIRA FLEXIVEL PRETA D.38MM 5 MT (MASTER)",
+    "UNI": "PC",
+    "QTD": 5
+  },
+  {
+    "CODI": 18,
+    "DES": "B3.752.0078 MANGUEIRA FLEXIVEL PRETA D.38MM 10 MT (MASTER)",
+    "UNI": "PC",
+    "QTD": 10
+  },
+  {
+    "CODI": 19,
+    "DES": "B3.753.0008 MANGUEIRA FLEXIVEL PRETA 32MM 2.2 METROS",
+    "UNI": "PC",
+    "QTD": 2.2
+  },
+  {
+    "CODI": 88,
+    "DES": "MANGUEIRA PARA PISCINA  25MM INTEX / 2 MTS",
+    "UNI": "UNI",
+    "QTD": 2
+  },
+  {
+    "CODI": 91,
+    "DES": "MANGUEIRA PARA PISCINA 25MM INTEX / 3MTS",
+    "UNI": "UNI",
+    "QTD": 3
+  },
+  {
+    "CODI": 92,
+    "DES": "MANGUEIRA PARA PISCINA 25MM INTEX / 4MTS",
+    "UNI": "UNI",
+    "QTD": 4
+  },
+  {
+    "CODI": 107,
+    "DES": "MANGUEIRA PARA PISCINA 38MM EVA AZUL - 8MTS",
+    "UNI": "PC",
+    "QTD": 8
+  },
+  {
+    "CODI": 108,
+    "DES": "MANGUEIRA PARA PISCINA 38MM EVA AZUL - 12MTS",
+    "UNI": "PC",
+    "QTD": 12
+  },
+  {
+    "CODI": 109,
+    "DES": "MANGUEIRA PARA PISCINA 38MM EVA AZUL - 4MTS",
+    "UNI": "PC",
+    "QTD": 4
+  },
+  {
+    "CODI": 104,
+    "DES": "B3.752.0076 MANGUEIRA FLEXIVEL PRETA D.38MM 2.4 MT (MASTER)",
+    "UNI": "PC",
+    "QTD": 2.4
+  },
+  {
+    "CODI": 110,
+    "DES": "MANGUEIRA PARA PISCINA 38MM EVA AZUL - 30MTS",
+    "UNI": "PC",
+    "QTD": 30
+  },
+  {
+    "CODI": 130,
+    "DES": "MANGUEIRA PARA PISCINA 25MM INTEX / 6 MTS",
+    "UNI": "UNI",
+    "QTD": 6
+  },
+  {
+    "CODI": 131,
+    "DES": "MANGUEIRA PARA PISCINA 25MM INTEX / 5 MTS",
+    "UNI": "UNI",
+    "QTD": 5
+  },
+  {
+    "CODI": 137,
+    "DES": "B3.752.0079 MANGUEIRA 38MM PRETA 15 MTS",
+    "UNI": "PC",
+    "QTD": 15
+  }
+]

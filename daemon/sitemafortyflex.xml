@@ -1,0 +1,31 @@
+<service>
+	<id>sitemafortyflex.exe</id>
+	<name>SitemaFortyflex</name>
+	<description>Serviço principal do sistema que acessa os bancos de dados HTD, e gera relatorios. Feiteo em nodejs pro Gustavo Miranda</description>
+	<executable>C:\Program Files\nodejs\node.exe</executable>
+	<argument>--harmony</argument>
+	<argument>C:\Users\elian\Documents\Sistema_de_Cobranca\lab_eng_software_backend\node_modules\node-windows\lib\wrapper.js</argument>
+	<argument>--file</argument>
+	<argument>C:\Users\elian\Documents\Sistema_de_Cobranca\lab_eng_software_backend\server.js</argument>
+	<argument>--scriptoptions=</argument>
+	<argument>--log</argument>
+	<argument>SitemaFortyflex wrapper</argument>
+	<argument>--grow</argument>
+	<argument>0.25</argument>
+	<argument>--wait</argument>
+	<argument>1</argument>
+	<argument>--maxrestarts</argument>
+	<argument>3</argument>
+	<argument>--abortonerror</argument>
+	<argument>n</argument>
+	<argument>--stopparentfirst</argument>
+	<argument>undefined</argument>
+	<logmode>rotate</logmode>
+	<stoptimeout>30sec</stoptimeout>
+	<serviceaccount>
+		<domain>SUPORTE</domain>
+		<user>LocalSystem</user>
+		<password></password>
+	</serviceaccount>
+	<workingdirectory>C:\Users\elian\Documents\Sistema_de_Cobranca\lab_eng_software_backend</workingdirectory>
+</service>
